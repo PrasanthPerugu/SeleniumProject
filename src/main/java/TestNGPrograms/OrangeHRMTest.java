@@ -18,6 +18,7 @@ public class OrangeHRMTest {
 		public void InsilialiseBrowser( ) {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	@AfterTest
 	public void Teardown() {
